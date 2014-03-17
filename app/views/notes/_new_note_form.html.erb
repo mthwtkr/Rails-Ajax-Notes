@@ -1,0 +1,4 @@
+<%= simple_form_for @note, remote: true do |f| %>
+	<%= f.input :title, label:false %>
+	<%= f.button :submit, "Add Note" %>
+<% end %>

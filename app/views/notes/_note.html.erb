@@ -1,0 +1,7 @@
+<div class="note">
+	<%= best_in_place note, :title %>
+	<%= button_to "delete", note, method: :delete, remote: true %>
+	<%= best_in_place note, :description, 
+		type: :textarea,
+		nil: "Click to add a description" %>
+</div>
